@@ -6,10 +6,11 @@ export class GrpcReflection {
 
     private reflectionClient;
 
-    constructor(host: string, credentials: grpc.ChannelCredentials) {
+    constructor(host: string, credentials: grpc.ChannelCredentials, options?: Partial<grpc.ChannelOptions>) {
         this.reflectionClient = new grpcReflection.Client(
             host,
             credentials
+            options
         );
     }
 
