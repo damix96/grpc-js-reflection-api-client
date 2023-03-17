@@ -10,6 +10,7 @@
     "examples"
   ],
   "scripts": {
+    "prepack": "npm run build",
     "prebuild": "rimraf dist",
     "build": "tsc",
     "start:dev": "nodemon --watch './**/*.ts' --exec 'ts-node' examples/otherMethods.ts"
