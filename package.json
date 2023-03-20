@@ -13,6 +13,7 @@
     "prepack": "npm run build",
     "prebuild": "rimraf dist",
     "build": "tsc",
+    "prepare": "npm run build",
     "start:dev": "nodemon --watch './**/*.ts' --exec 'ts-node' examples/otherMethods.ts"
   },
   "homepage": "https://gawsoft.pl",
